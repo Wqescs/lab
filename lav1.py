@@ -7,10 +7,10 @@ slash = '/'
 with open('Lav1.txt', 'r') as file:
     while True:
         char = file.read(1)
-        # Открывая фигурная скобка, переключаем флаг
+        # Открытая фигурная скобка, переключаем флаг
         if char == opened:
             meter1 += 1
-        # Закрывающую фигурная скобка, сбрасываем флаг
+        # Закрытая фигурная скобка, сбрасываем флаг
         elif char == closed:
             meter1 -= 1
         elif char == slash:
